@@ -12,12 +12,12 @@ public class RepeatElement {
 		int j=0;		
 		for(int i=0;i<size-1;i++) 
 		{
-			if(array[i]==array[i+1])
+			if(array[i]!=array[i+1])
 			{
 				array[j++]=array[i];
 			}
 		}		
-//		array[j++]=array[size-1];
+		array[j++]=array[size-1];
 		
 		return j;
 	}
